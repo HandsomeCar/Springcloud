@@ -1,10 +1,10 @@
-#修改7001主机yml文件
+#修改7002主机yml文件
 server:
-  port: 7001
+  port: 7002
 eureka:
   instance:
     # eureka服务端的实例名字
-    hostname: eureka7001.com
+    hostname: eureka7002.com
   client:
     #表 示是否将自己注册到Eureka Server
     register-with-eureka: false
@@ -12,4 +12,4 @@ eureka:
     fetch-registry: false
     # 设置与 Eureka server交互的地址查询服务和注册服务都需要依赖这个地址
     service-url:
-      defaultZone: http://eureka7002.com:7002/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/
